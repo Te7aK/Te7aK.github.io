@@ -40,27 +40,31 @@
 			</div>
 	    </body>
 
-<script type="text/javascript">
-function clock() {
-var d = new Date();
-var hours = d.getHours();
-var minutes = d.getMinutes();
-var seconds = d.getSeconds();
-if (hours <= 9) hours = "0" + hours;
-if (minutes <= 9) minutes = "0" + minutes;
-if (seconds <= 9) seconds = "0" + seconds;
-date_time = hours + ":" + minutes + ":" + seconds;
-if (document.layers) {
- document.layers.doc_time.document.write(date_time);
- document.layers.doc_time.document.close();
-}
-else document.getElementById("doc_time").innerHTML = date_time;
- setTimeout("clock()", 1000);
-}
-</script>
-<script type="text/javascript">
- clock();
-</script>
-
-</script>
+<footer class="site-footer">
+               <div class="widget widget-countdown m-t-64">
+                  <div class="widget-content">
+                     <div class="time"><span id="doc_time"></span></div>
+                     <script type="text/javascript">
+                        function clock() {
+                        var d = new Date();
+                        var hours = d.getHours();
+                        var minutes = d.getMinutes();
+                        var seconds = d.getSeconds();
+                        if (hours <= 9) hours = "0" + hours;
+                        if (minutes <= 9) minutes = "0" + minutes;
+                        if (seconds <= 9) seconds = "0" + seconds;
+                          date_time ="...:: " + hours + ":" + minutes + ":" + seconds+" ::...";
+                        if (document.layers) {
+                        document.layers.doc_time.document.write(date_time);
+                        document.layers.doc_time.document.close();
+                        } else document.getElementById("doc_time").innerHTML = date_time;
+                        setTimeout("clock()", 1000);
+                        }
+                     </script>
+                     <script type="text/javascript">
+                        clock();
+                     </script>  
+                  </div>
+               </div>
+            </footer>
 </html>	
