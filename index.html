@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>TeSaK Squad</title>
+		<link rel="icon" type="image/ico" href="1.ico" sizes="45x48">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">		
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>			
+		<script src="https://use.fontawesome.com/a5e30dd034.js"></script>
+		<link rel="stylesheet" href="css/style.css" >
+	</head>
+		<body class="loading">
+			<div id="wrapper">
+				<video autoplay="1" loop="" id="player">
+					<source src="vid/Girl.mp4" type="video/mp4">
+				</video>     
+			<div id="overlay"></div>
+			<div id="main">				
+					<header id="header">					
+						<h1>Привет :)</h1>
+						<nav>
+							<ul>	
+                                    <li><a href="https://vk.com/te7ak" target="_blank" class="fa fa-vk"></a></li>	
+                                    <li><a href="https://instagram.com/karlanders0n/" target="_blank" class="fa fa-instagram"></a></li>
+				                    <li><a href="https://steamcommunity.com/id/_TeSaK_/" target="_blank" class="fa fa-steam-square" aria-hidden="true"></a></li>	
+                                    <li><a href="https://www.youtube.com/channel/UCn6XnaAroMc2MQPSBNaIljw" target="_blank" class="fa fa-youtube" aria-hidden="true"></a></li>	
+								</ul>
+						</nav>
+					</header>				
+			</div>
+		</div>
+		
+	</body>
+
+<script type="text/javascript">
+function clock() {
+var d = new Date();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+<script type="text/javascript">
+ clock();
+</script>
+
+</script>
+</html>
