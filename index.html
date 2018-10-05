@@ -1,0 +1,74 @@
+
+
+<html>
+	<head>
+		<title>TeSaK Squad</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">		
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>			
+		<script src="https://use.fontawesome.com/a5e30dd034.js"></script>
+		<link rel="stylesheet" href="css/style.css" >
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+		
+		
+	</head>
+    
+	<body class="loading">		
+		<div id="wrapper">
+			<audio autoplay="autoplay" loop="">
+            <source src="video/Music.mp3" type="audio/mp3">
+			 </audio>
+		    <video autoplay="autoplay" loop="">
+            <source src="video/Video.mp4" type="video/mp4"/>
+             </video>     
+			<div id="overlay"></div>
+			<div id="main">				
+					<header id="header">					
+					<ul>					
+					<marquee aligt="center" scrollamount="50" width="540" style="width:540px;">&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;</marquee>
+					</ul>
+                     <div class="time"><span id="doc_time"></span></div>
+						<h1>TeSaK</h1>
+						<nav>
+							<ul>	
+							<li><a href="https://vk.com/te7ak"  target="_blank" class="fa fa-vk"></a></li>	
+							<li><a href="https://instagram.com/karlanders0n"  target="_blank" class="fa fa-instagram" aria-hidden="true"></a></li>	
+							<li><a href="https://youtube.com/channel/UCn6XnaAroMc2MQPSBNaIljw"  target="_blank" class="fa fa-youtube" aria-hidden="true"></a></li>	
+							<li><a href="https://steamcommunity.com/id/_TeSaK_" target="_popup" class="fa fa-steam-square"></a></li>		
+							</ul>
+							<ul>
+							<marquee aligt="center" scrollamount="50" direction="right" width="540" style="width:540px;">&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;</marquee>
+							</ul>		
+						</nav>
+			<footer class="site-footer">
+                <div class="widget widget-countdown m-t-64">
+                     <div class="widget-content">
+                     <div class="time"><span id="doc_time"></span></div>
+                     <script type="text/javascript">
+                        function clock() {
+                        var d = new Date();
+                        var hours = d.getHours();
+                        var minutes = d.getMinutes();
+                        var seconds = d.getSeconds();
+                        if (hours <= 9) hours = "0" + hours;
+                        if (minutes <= 9) minutes = "0" + minutes;
+                        if (seconds <= 9) seconds = "0" + seconds;
+                        date_time = hours + ":" + minutes + ":" + seconds;
+                        if (document.layers) {
+                        document.layers.doc_time.document.write(date_time);
+                        document.layers.doc_time.document.close();
+                        } else document.getElementById("doc_time").innerHTML = date_time;
+                        setTimeout("clock()", 1000);
+                        }
+                     </script>
+                     <script type="text/javascript">
+                        clock();
+                     </script>  
+                  </div>
+               </div>
+            </footer>
+		      </header>				
+			</div>
+		</div>
+	</body>
+</html>
